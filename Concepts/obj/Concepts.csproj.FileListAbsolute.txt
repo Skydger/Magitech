@@ -1,0 +1,9 @@
+E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.ConceptsMainForm.resources
+E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.Properties.Resources.resources
+E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.csproj.GenerateResource.Cache
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\Concepts.exe
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\Concepts.pdb
+E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.exe
+E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.pdb
+E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.PersonagePanel.resources
