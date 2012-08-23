@@ -8,24 +8,64 @@ namespace Concepts
                        Mage = 1,     Monk = 2,     Scientist = 3,  Psychic = 4,
                        Warrior = 11, Paladin = 12, Technican = 13, Soldier = 14
                       }
+    public class NameGetter{
+        public static string GetClassName( Class cur_class ){
+            string ret = "";
+            switch(cur_class){
+                case Class.Mage:
+                    ret = "Маг";
+                    break;
+                case Class.Monk:
+                    ret = "Жрец";
+                    break;
+                case Class.Scientist:
+                    ret = "Исследователь";
+                    break;
+                case Class.Psychic:
+                    ret = "Паракинетик";
+                    break;
+                case Class.Warrior:
+                    ret = "Воин";
+                    break;
+                case Class.Paladin:
+                    ret = "Паладин";
+                    break;
+                case Class.Technican:
+                    ret = "Инженер";
+                    break;
+                case Class.Soldier:
+                    ret = "Боец";
+                    break;
+            }
+            return ret;
+        }
+    }
     public class PersonBasics{
         private Class basic_class;
         private int level;
         private int base_health;
         private int base_energy;
         private int base_expirience;
-        private static double exp_modifier = 1.2;
+        private static double exp_modifier = 1.12;
+        private static double exp_const = 10;
 
-        protected int HealthModifier(){
-            return this.level * (this.level + 1) / 2;
+        protected int HealthModifier( int bz ){
+            if (bz <= 0) bz = 10;
+            return this.level * (this.level + 1) / bz;
         }
-        protected int EnergyModifier(){
-            return this.level * (this.level + 1) / 2;
+        protected int EnergyModifier(int bz){
+            if (bz <= 0) bz = 10;
+            return this.level * (this.level + 1) / bz;
+        }
+
+        protected static int GetExpForLevel(int lvl){
+            int exp = (int)(exp_const * Math.Pow(exp_modifier, lvl - 1));
+            return exp;
         }
 
         protected int GetExpirience(){
             if ( this.level == 1 ) this.base_expirience = 10;
-            else this.base_expirience = (int)(10 * (1 - Math.Pow(exp_modifier, this.level)) / (1 - exp_modifier));
+            else this.base_expirience = (int)(exp_const * (1 - Math.Pow(exp_modifier, this.level)) / (1 - exp_modifier));
             return this.base_expirience;
         }
 
@@ -35,23 +75,23 @@ namespace Concepts
             switch (basic_class){
                 case Class.Mage:
                 case Class.Psychic:
-                    h_delta = 5 + this.HealthModifier();
-                    e_delta = 15 + this.EnergyModifier();
+                    h_delta = this.HealthModifier(22);
+                    e_delta = this.EnergyModifier(16);
                     break;
                 case Class.Monk:
                 case Class.Scientist:
-                    h_delta = 8 + this.HealthModifier();
-                    e_delta = 12 + this.EnergyModifier();
+                    h_delta = this.HealthModifier(8);
+                    e_delta = this.EnergyModifier(12);
                     break;
                 case Class.Paladin:
                 case Class.Technican:
-                    h_delta = 12 + this.HealthModifier();
-                    e_delta = 8 + this.EnergyModifier();
+                    h_delta = this.HealthModifier(12);
+                    e_delta = this.EnergyModifier(8);
                     break;
                 case Class.Warrior:
                 case Class.Soldier:
-                    h_delta = 15 + this.HealthModifier();
-                    e_delta = 5 + this.EnergyModifier();
+                    h_delta = this.HealthModifier(16);
+                    e_delta = this.EnergyModifier(4);
                     break;
             }
             this.base_health += h_delta;
@@ -81,6 +121,11 @@ namespace Concepts
         {
             get { return this.base_health; }
             set { this.base_health = value; }
+        }
+
+        public Class Class{
+            get { return this.basic_class; }
+            set { this.basic_class = value; }
         }
 
         public int Level{

@@ -19,6 +19,7 @@ namespace Concepts
         private void PersonagePanel_Load(object sender, EventArgs e)
         {
             this.lblLevel.Text = "Уровень: " + this.personage.Level.ToString();
+            this.lblClass.Text = "Класс: " + NameGetter.GetClassName(personage.Class);
             this.pbExpirience.Maximum = 100;
             if ( this.personage.MaxExpirience > 0 )
                 this.pbExpirience.Value = (int)this.personage.Expirience * 100/this.personage.MaxExpirience;
