@@ -130,7 +130,10 @@ namespace Concepts
 
         public int Level{
             get { return this.level; }
-            set { this.level = value; }
+            set {
+                this.level = value;
+                this.GetBasics();
+                }
         }
 
         public PersonBasics(Class start_class, int start_level){
@@ -202,7 +205,7 @@ namespace Concepts
             set { this.defence = value; }
         }
 
-        public void LevelUp() { this.Level++; base.GetBasics(); }
+        public void LevelUp() { this.Level++;/* base.GetBasics(); */}
 
         public Personage(Class base_class, int level)
             : base(base_class, level)

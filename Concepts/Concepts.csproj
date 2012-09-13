@@ -34,6 +34,10 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.0.9.41461, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\zedgraph_dll_v509_459\zedgraph_dll_v5.0.9\ZedGraph.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConceptsMainForm.cs">
@@ -41,6 +45,12 @@
     </Compile>
     <Compile Include="ConceptsMainForm.Designer.cs">
       <DependentUpon>ConceptsMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulasTesterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulasTesterForm.Designer.cs">
+      <DependentUpon>FormulasTesterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Personage.cs" />
     <Compile Include="PersonagePanel.cs">
@@ -54,6 +64,10 @@
     <EmbeddedResource Include="ConceptsMainForm.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ConceptsMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulasTesterForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormulasTesterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonagePanel.resx">
       <SubType>Designer</SubType>

@@ -7,3 +7,17 @@ E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\Concepts.pdb
 E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.exe
 E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.pdb
 E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.PersonagePanel.resources
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\ZedGraph.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\ZedGraph.xml
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\de\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\es\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\fr\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\hu\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\it\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\ja\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\pt\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\sv\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\tr\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\zh-cn\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\bin\Debug\zh-tw\ZedGraph.resources.dll
+E:\Projects\Games\Magitech\Magitech\Concepts\obj\Debug\Concepts.FormulasTesterForm.resources

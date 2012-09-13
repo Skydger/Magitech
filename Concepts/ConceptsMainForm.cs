@@ -38,5 +38,11 @@ namespace Concepts
             panel = new PersonagePanel(ref party1[0]);
             this.tlpCharacters.Controls.Add(panel, 0, 0);
         }
+
+        private void tsmiFormulas_Click(object sender, EventArgs e)
+        {
+            FormulasTesterForm frm = new FormulasTesterForm();
+            frm.ShowDialog();
+        }
     }
 }

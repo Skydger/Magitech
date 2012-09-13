@@ -34,6 +34,7 @@ namespace Concepts
             this.tsmiPersonagesAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiActions = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLevelUp = new System.Windows.Forms.Button();
+            this.tsmiFormulas = new System.Windows.Forms.ToolStripMenuItem();
             this.msConceptMainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +79,8 @@ namespace Concepts
             // 
             // tsmiActions
             // 
+            this.tsmiActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiFormulas});
             this.tsmiActions.Name = "tsmiActions";
             this.tsmiActions.Size = new System.Drawing.Size(70, 20);
             this.tsmiActions.Text = "Действия";
@@ -91,6 +94,13 @@ namespace Concepts
             this.btnLevelUp.Text = "Уровень";
             this.btnLevelUp.UseVisualStyleBackColor = true;
             this.btnLevelUp.Click += new System.EventHandler(this.btnLevelUp_Click);
+            // 
+            // tsmiFormulas
+            // 
+            this.tsmiFormulas.Name = "tsmiFormulas";
+            this.tsmiFormulas.Size = new System.Drawing.Size(152, 22);
+            this.tsmiFormulas.Text = "Формулы...";
+            this.tsmiFormulas.Click += new System.EventHandler(this.tsmiFormulas_Click);
             // 
             // ConceptsMainForm
             // 
@@ -118,6 +128,7 @@ namespace Concepts
         private System.Windows.Forms.ToolStripMenuItem tsmiPersonagesAdd;
         private System.Windows.Forms.ToolStripMenuItem tsmiActions;
         private System.Windows.Forms.Button btnLevelUp;
+        private System.Windows.Forms.ToolStripMenuItem tsmiFormulas;
     }
 }
 
